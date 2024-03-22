@@ -15,9 +15,13 @@ Matplotlib and Seaborn: Python libraries for data visualization.
 
 ## Methodology
 Data Preprocessing: Cleaning and preprocessing the Yelp reviews dataset, which includes removing punctuation, stop words, and performing tokenization.
+
 Feature Extraction: Extracting features from the preprocessed text data using techniques like TF-IDF (Term Frequency-Inverse Document Frequency).
+
 Model Training: Training a machine learning model (e.g., Support Vector Machine, Naive Bayes) using the extracted features to classify reviews into positive, negative, or neutral sentiments.
+
 Evaluation: Evaluating the performance of the trained model using metrics such as accuracy, precision, recall, and F1-score.
+
 Deployment: Deploying the trained model to classify sentiments of new reviews.
 
 ## Results
