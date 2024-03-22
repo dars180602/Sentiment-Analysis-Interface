@@ -21,7 +21,7 @@ Evaluation: Evaluating the performance of the trained model using metrics such a
 Deployment: Deploying the trained model to classify sentiments of new reviews.
 
 ## Results
-The trained model achieved an accuracy of 81.5% on the test dataset.
+The trained model Bernoulli Naive Bayes an accuracy of 81.5% on the test dataset.
 
 Precision 0 - 88%  |  1 - 77%
 
