@@ -6,6 +6,13 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 import string
+import nltk
+
+# Download NLTK stopwords corpus if not already downloaded
+try:
+    stopwords.words('english')
+except LookupError:
+    nltk.download('stopwords')
 
 # Load the saved model
 with open('nb_bin_model3.pkl', 'rb') as file:
@@ -21,7 +28,6 @@ contractions_dict = {
     "aren't": "are not",
     "can't": "cannot",
     "can't've": "cannot have",
-    "'cause": "because",
     # Add more contractions as needed
 }
 
