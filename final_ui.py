@@ -2,11 +2,11 @@ import streamlit as st
 import pickle
 
 # Load the saved model
-with open('nb_bin_model1.pkl', 'rb') as file:
+with open('nb_bin_model3.pkl', 'rb') as file:
     loaded_classifier = pickle.load(file)
 
 # Load the saved vectorizer
-with open('tfidf_vect_80mindf.pkl', 'rb') as file:
+with open('tfidf_vectorizer.pkl', 'rb') as file:
     tfidf_vectorizer = pickle.load(file)
 
 # Define the function to make predictions
