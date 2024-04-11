@@ -210,7 +210,7 @@ if st.button('Predict Sentiment'):
         # Display the numerical prediction value
         st.write(f'TF-IDF value: {text_pad}')
 
-        # Display the numerical prediction value
+        # Display the numerical predicstion value
         st.write(f'Numerical prediction value: {prediction}')
 
         # Convert prediction to sentiment label
@@ -223,19 +223,3 @@ if st.button('Predict Sentiment'):
         st.write(f'The sentiment of the review is: {sentiment}')
     else:
         st.write('Please enter a review before predicting.')
-
-
-# Explain the prediction for the preprocessed text instance
-explanation = explainer.explain_instance(preprocessed_text_instance, nb_predict_proba, num_features=10, top_labels=1)
-
-# Print the explanation
-print('Text instance:', text_instance)
-print('Text instance:', preprocessed_text_instance)
-print('Predicted label:', nb_classifier.predict(loaded_tfidf_vectorizer.transform([text_instance]))[0])
-
-# Get the top features and their weights for the predicted label
-top_features = explanation.as_list(label=explanation.top_labels[0])
-
-# Print the top features and their weights
-for feature, weight in top_features:
-    print(f"{feature}: {weight}")
