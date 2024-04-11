@@ -189,6 +189,26 @@ def preprocess_text(text):
 
 # Create the Streamlit UI
 st.title('Sentiment Analysis App')
+
+# Add an image to your Streamlit app
+image = st.image('sentiment.webp')
+
+st.write("""
+## About
+**Welcome to the Sentiment Analysis App! This app allows you to analyze the sentiment whether a Review is Positive or Negative.**
+
+The notebook, model and documentation are available on [GitHub.](https://github.com/dars180602/Sentiment-Analysis-Interface)        
+
+**Contributors:** 
+- **Cecille Jatulan**
+- **David Higuera**
+- **Diana Reyes**
+- **Mike Montanez**
+- **Maria Melencio**
+- **Abhikumar Patel**
+         
+""")
+
 st.write('Enter your review below:')
 
 # Create a text input for user to input review
@@ -206,9 +226,6 @@ if st.button('Predict Sentiment'):
 
         # Make predictions using the loaded model
         prediction = loaded_classifier.predict(text_pad)
-
-        # Display the numerical prediction value
-        st.write(f'TF-IDF value: {text_pad}')
 
         # Display the numerical predicstion value
         st.write(f'Numerical prediction value: {prediction}')
