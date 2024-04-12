@@ -18,7 +18,7 @@ except LookupError:
     nltk.download('stopwords')
 
 # Load the model
-loaded_classifier = load_model('lstm_model1.h5')
+loaded_classifier = load_model('lstm_trial.h5')
 
 # Load the saved vectorizer
 with open('tokenizer.pkl', 'rb') as file:
@@ -191,7 +191,7 @@ def preprocess_text(text):
 st.title('Sentiment Analysis App')
 
 # Add an image to your Streamlit app
-image = st.image('sentiment.webp')
+image = st.image('sentiment.png')
 
 st.write("""
 ## About
