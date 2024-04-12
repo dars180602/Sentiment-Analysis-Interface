@@ -25,15 +25,12 @@ Evaluation: Evaluating the performance of the trained model using metrics such a
 Deployment: Deploying the trained model to classify sentiments of new reviews.
 
 ## Results
-The trained model Bernoulli Naive Bayes an accuracy of 81.5% on the test dataset.
 
-Precision 0 - 88%  |  1 - 77%
+                    BNB Model                                                                  LSTM Model
+ 
+                    Test            Training                                                  Test                            Training
+Accuracy            0.882             0.833                                                   0.952                            0.938
 
-Recall 0 - 73%  |  1 - 90%
-
-F1-score 0 - 80%  |  1 - 83%
-
-For each sentiment class.
 
 ## Usage
 Clone the repository:
