@@ -26,10 +26,12 @@ Deployment: Deploying the trained model to classify sentiments of new reviews.
 
 ## Results
 
-                    BNB Model                                                                  LSTM Model
- 
-                    Test            Training                                                  Test                            Training
-Accuracy            0.882             0.833                                                   0.952                            0.938
+Accuracy
+
+BNB Model     Test            Training                                                  
+              0.882             0.833                                                   
+
+LSTM Model    0.952             0.938
 
 
 ## Usage
