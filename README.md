@@ -46,9 +46,14 @@ Deploy the trained model for sentiment analysis on new Yelp reviews.
 
 ## Contributors
 Abhikumar Patel
+
 Cecille Jatulan
+
 David Higuera
+
 Diana Reyes
+
 Maria Melencio
+
 Michael Montanez
 
